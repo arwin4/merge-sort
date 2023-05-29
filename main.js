@@ -11,6 +11,8 @@ function mergeSort(arr) {
   // Base case: just one item, so it's already sorted
   if (arr.length === 1) return arr[0];
 
+  // Split into left and right arrays
+  // Math.floor() accommodates any parity of array length
   const lengthLeft = Math.floor(arr.length / 2);
   const right = arr.splice(lengthLeft);
   const left = arr;
