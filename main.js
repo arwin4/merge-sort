@@ -12,8 +12,8 @@ function mergeSort(arr) {
   if (arr.length === 1) return arr[0];
 
   // Split into left and right arrays
-  // Math.floor() accommodates any parity of array length
-  const lengthLeft = Math.floor(arr.length / 2);
+  // Math.ceil() accommodates any parity of array length
+  const lengthLeft = Math.ceil(arr.length / 2);
   const right = arr.splice(lengthLeft);
   const left = arr;
 
@@ -22,8 +22,8 @@ function mergeSort(arr) {
   console.log(right);
 }
 
-mergeSort(array1);
-mergeSort(array2);
+// mergeSort(array1);
+// mergeSort(array2);
 mergeSort(array3);
-mergeSort(array4);
-mergeSort(array8);
+// mergeSort(array4);
+// mergeSort(array8);
