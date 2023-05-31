@@ -6,7 +6,7 @@ const array5 = [438, 181, 455, 109, 620, 805]; // large, nonconsecutive numbers
 const array6 = []; // nothing to sort, i.e. sorted
 const array7 = [2]; // one item, i.e. sorted
 const array8 = [4, -2, 3, -243]; // negative numbers
-const array9 = [4, 2, 2, 6, 5, 3, 8, 1, 7, 2, 3, 12, 11, 9, 10]; // duplicates
+const array9 = [4, 2, 2, 6, 5, 3, 8, 1, 7, 2, 3, 12, 11, 9, 10]; // d2uplicates
 const array10 = [5, 2, 1, 3, 6, 4]; // Example from CS50: https://youtu.be/Ns7tGNbtvV4
 const array11 = [5, 2, 1, 3];
 const array12 = [9, 3, 7, 5, 6, 4, 8, 2, 10]; // https://www.youtube.com/watch?v=mB5HXBb_HY8
@@ -54,8 +54,8 @@ function merge(left, right) {
     }
   }
 
-  // There's just one value left, so we know that it's the largest. So figure
-  // out on which side it is and at it to the end of the merged array.
+  // There are only values left on one side. Figure out which side, and keep
+  // adding them to the end. They are already sorted.
   while (left.length > 0) {
     merged.push(left[0]);
     left = left.slice(1);
