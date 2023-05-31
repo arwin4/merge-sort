@@ -6,7 +6,7 @@ const array5 = [438, 181, 455, 109, 620, 805]; // large, nonconsecutive numbers
 const array6 = []; // nothing to sort, i.e. sorted
 const array7 = [2]; // one item, i.e. sorted
 const array8 = [4, -2, 3, -243]; // negative numbers
-const array9 = [4, 2, 2, 6, 5, 3, 8, 1, 7, 2, 3, 12, 11, 9, 10]; // d2uplicates
+const array9 = [4, 2, 2, 6, 5, 3, 8, 1, 7, 2, 3, 12, 11, 9, 10]; // duplicates
 const array10 = [5, 2, 1, 3, 6, 4]; // Example from CS50: https://youtu.be/Ns7tGNbtvV4
 const array11 = [5, 2, 1, 3];
 const array12 = [9, 3, 7, 5, 6, 4, 8, 2, 10]; // https://www.youtube.com/watch?v=mB5HXBb_HY8
