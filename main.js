@@ -1,6 +1,6 @@
-const array1 = [1, 2, 3, 4, 5, 6, 7]; // sorted, uneven
+const array1 = [1, 2, 3, 4, 5, 6, 7]; // sorted, odd
 const array2 = [1, 2, 3, 4, 5, 6, 7, 8]; // sorted, even
-const array3 = [4, 2, 6, 5, 3, 1, 7]; // shuffled, uneven
+const array3 = [4, 2, 6, 5, 3, 1, 7]; // shuffled, odd
 const array4 = [4, 6, 5, 2, 8, 3, 1, 7]; // shuffled, even
 const array5 = [438, 181, 455, 109, 620, 805]; // large, nonconsecutive numbers
 const array6 = []; // nothing to sort, i.e. sorted
@@ -10,7 +10,7 @@ const array9 = [4, 2, 2, 6, 5, 3, 8, 1, 7, 2, 3, 12, 11, 9, 10]; // duplicates
 const array10 = [5, 2, 1, 3, 6, 4]; // Example from CS50: https://youtu.be/Ns7tGNbtvV4
 const array11 = [5, 2, 1, 3];
 const array12 = [9, 3, 7, 5, 6, 4, 8, 2, 10]; // https://www.youtube.com/watch?v=mB5HXBb_HY8
-const array13 = [5, 2, 1, 3, 4];
+const array13 = [5, 2.242, 1, 3, 4.2, 0.000001]; // non-integers
 
 function mergeSort(arr) {
   // Handle incorrect input
@@ -81,4 +81,5 @@ console.log(mergeSort(array10));
 console.log(mergeSort(array11));
 console.log(mergeSort(array12));
 console.log(mergeSort(array13));
+console.log(mergeSort(array14));
 console.log(mergeSort());
